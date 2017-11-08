@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="owen:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="bdts.war">
+      <element id="artifact" artifact-name="owen:war exploded" />
+    </root>
+  </artifact>
+</component>
