@@ -1,6 +1,5 @@
 package com.critc.plat.sys.dao;
 
-import com.critc.plat.core.dao.BaseDao;
 import com.critc.plat.sys.model.SysRoleResource;
 import org.springframework.stereotype.Repository;
 

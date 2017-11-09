@@ -1,6 +1,5 @@
 package com.critc.plat.sys.dao;
 
-import com.critc.plat.core.dao.BaseDao;
 import com.critc.plat.sys.model.SysUserLogin;
 import com.critc.plat.sys.vo.SysUserSearchVO;
 import com.critc.plat.sys.vo.SysUserloginSearchVO;

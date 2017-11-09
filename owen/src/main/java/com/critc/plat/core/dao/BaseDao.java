@@ -14,11 +14,13 @@ import java.lang.reflect.ParameterizedType;
 import java.util.List;
 
 /**
- * 用于封装Dao的工作
+ * 基础DAO，用于封装dao操作
+ *
+ * @author 孔垂云
+ * @date 2017-06-13
  */
 @Component
-public class BaseDao<T,S> {
-
+public class BaseDao<T, S> {
     @Autowired
     protected JdbcTemplate jdbcTemplate;
     @Autowired
@@ -31,8 +33,8 @@ public class BaseDao<T,S> {
      * @param t
      * @return
      */
-    protected int insert(String sql,T t){
-        return namedParameterJdbcTemplate.update(sql,new BeanPropertySqlParameterSource(t));
+    protected int insert(String sql, T t) {
+        return namedParameterJdbcTemplate.update(sql, new BeanPropertySqlParameterSource(t));
     }
 
     /**
@@ -40,15 +42,15 @@ public class BaseDao<T,S> {
      *
      * @param sql
      * @param t
-     * @param pkField
+     * @param pkField 主键字段
      * @return
      */
-    protected int insertForId(String sql,T t,String pkField){
-        KeyHolder key = new GeneratedKeyHolder();
-        int rc = namedParameterJdbcTemplate.update(sql,new BeanPropertySqlParameterSource(t),key,new String[]{pkField});
-        if(rc>0){
-            return key.getKey().intValue();
-        }else{
+    protected int insertForId(String sql, T t, String pkField) {
+        KeyHolder keyHolder = new GeneratedKeyHolder();
+        int rc = namedParameterJdbcTemplate.update(sql, new BeanPropertySqlParameterSource(t), keyHolder, new String[]{pkField});
+        if (rc > 0) {
+            return keyHolder.getKey().intValue();
+        } else {
             return 0;
         }
     }
@@ -60,8 +62,8 @@ public class BaseDao<T,S> {
      * @param t
      * @return
      */
-    protected  int update(String sql,T t){
-        return namedParameterJdbcTemplate.update(sql,new BeanPropertySqlParameterSource(t));
+    protected int update(String sql, T t) {
+        return namedParameterJdbcTemplate.update(sql, new BeanPropertySqlParameterSource(t));
     }
 
     /**
@@ -71,8 +73,8 @@ public class BaseDao<T,S> {
      * @param objects
      * @return
      */
-    protected int update(String sql,Object... objects){
-        return jdbcTemplate.update(sql,objects);
+    protected int update(String sql, Object... objects) {
+        return jdbcTemplate.update(sql, objects);
     }
 
     /**
@@ -82,33 +84,33 @@ public class BaseDao<T,S> {
      * @param objects
      * @return
      */
-    protected int delete(String sql,Object... objects){
-        return jdbcTemplate.update(sql,objects);
+    protected int delete(String sql, Object... objects) {
+        return jdbcTemplate.update(sql, objects);
     }
 
     /**
      * 根据参数获取model
+     *
      * @param sql
      * @param objects
      * @return
      */
-    protected T get(String sql,Object... objects){
-        List<T> list = jdbcTemplate.query(sql,objects, BeanPropertyRowMapper.newInstance(getClazz()));
-        if (list.size()>0){
+    protected T get(String sql, Object... objects) {
+        List<T> list = jdbcTemplate.query(sql, objects, BeanPropertyRowMapper.newInstance(getClazz()));
+        if (list.size() > 0)
             return list.get(0);
-        }else{
+        else
             return null;
-        }
     }
 
     /**
      * 取得当前泛型的实际class名
      *
-     * @param <T>
      * @return
      */
-    private <T> Class<T> getClazz() {
-        return ((Class<T>)((ParameterizedType)getClass().getGenericSuperclass()).getActualTypeArguments()[0]);
+    private Class<T> getClazz() {
+        return ((Class<T>) ((ParameterizedType) getClass()
+                .getGenericSuperclass()).getActualTypeArguments()[0]);
     }
 
     /**
@@ -195,5 +197,4 @@ public class BaseDao<T,S> {
     protected List<ComboboxVO> listCombobox(String sql, Object... objects) {
         return jdbcTemplate.query(sql, objects, new BeanPropertyRowMapper<>(ComboboxVO.class));
     }
-
 }
