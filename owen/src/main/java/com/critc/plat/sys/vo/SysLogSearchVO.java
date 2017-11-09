@@ -1,6 +1,8 @@
 package com.critc.plat.sys.vo;
 
-public class SysLogSearchVO {
+import com.critc.plat.util.page.PageSearchVO;
+
+public class SysLogSearchVO extends PageSearchVO{
 
     private Integer userId;
     private String startDate;

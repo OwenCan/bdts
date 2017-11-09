@@ -41,7 +41,7 @@
       <file leaf-file-name="SysUserDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/critc/plat/sys/dao/SysUserDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
+            <state relative-caret-position="2046">
               <caret line="128" column="7" lean-forward="true" selection-start-line="128" selection-start-column="7" selection-end-line="128" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -50,11 +50,45 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SysUserLoginDao.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SysUserLoginDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/critc/plat/sys/dao/SysUserLoginDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="346">
-              <caret line="53" column="14" lean-forward="true" selection-start-line="53" selection-start-column="14" selection-end-line="53" selection-end-column="14" />
+            <state relative-caret-position="1003">
+              <caret line="59" column="1" lean-forward="true" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SysRoleDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/critc/plat/sys/dao/SysRoleDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SysRoleresourceDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/critc/plat/sys/dao/SysRoleresourceDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SysResourceDao.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/critc/plat/sys/dao/SysResourceDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="19" column="25" lean-forward="false" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -115,6 +149,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/critc/plat/util/page/PageUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/critc/plat/sys/vo/SysUserloginSearchVO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/critc/plat/sys/dao/SysUserLoginDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/critc/plat/sys/dao/SysRoleresourceDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/critc/plat/sys/vo/SysLogSearchVO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/critc/plat/sys/dao/SysLogDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/critc/plat/sys/dao/SysRoleDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/critc/plat/sys/dao/SysResourceDao.java" />
       </list>
     </option>
   </component>
@@ -161,7 +200,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1346" />
@@ -281,6 +320,7 @@
       <recent name="com.critc.plat.core.dao" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\software\idea\workspace\owen\src\main\java\com\critc\plat\sys\dao" />
       <recent name="E:\software\intellij idea\owen\src\main\java\com\critc\plat" />
       <recent name="E:\software\intellij idea\owen\src\main\resources" />
       <recent name="E:\software\intellij idea\owen\src\main\webapp" />
@@ -467,15 +507,15 @@
       <option name="presentableId" value="Default" />
       <updated>1510043605800</updated>
       <workItem from="1510043609832" duration="16211000" />
-      <workItem from="1510195897756" duration="1043000" />
+      <workItem from="1510195897756" duration="3639000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17254000" />
+    <option name="totallyTimeSpent" value="19850000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -535,14 +575,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/critc/plat/sys/vo/SysLogSearchVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -653,16 +685,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/critc/plat/sys/dao/SysUserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="128" column="7" lean-forward="true" selection-start-line="128" selection-start-column="7" selection-end-line="128" selection-end-column="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/critc/plat/core/dao/BaseDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -689,10 +711,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/critc/plat/sys/model/SysRole.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-456">
+          <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/critc/plat/sys/vo/SysLogSearchVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="4" column="48" lean-forward="false" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/critc/plat/sys/dao/SysLogDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="15" column="37" lean-forward="false" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/critc/plat/sys/dao/SysRoleresourceDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/critc/plat/sys/dao/SysRoleDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/critc/plat/sys/dao/SysUserLoginDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="346">
-          <caret line="53" column="14" lean-forward="true" selection-start-line="53" selection-start-column="14" selection-end-line="53" selection-end-column="14" />
+        <state relative-caret-position="1003">
+          <caret line="59" column="1" lean-forward="true" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/critc/plat/sys/dao/SysUserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2046">
+          <caret line="128" column="7" lean-forward="true" selection-start-line="128" selection-start-column="7" selection-end-line="128" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/critc/plat/sys/dao/SysResourceDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="19" column="25" lean-forward="false" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
