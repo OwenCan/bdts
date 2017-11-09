@@ -1,11 +1,12 @@
 package com.critc.plat.sys.vo;
 
 
+import com.critc.plat.util.page.PageSearchVO;
+
 /**
  * 用户登录查询serverVo
  */
-public class SysUserloginSearchVO
-{
+public class SysUserloginSearchVO extends PageSearchVO {
 
     private Integer userId;
 
