@@ -1,5 +1,6 @@
 package com.critc.plat.sys.dao;
 
+import com.critc.plat.core.dao.BaseDao;
 import com.critc.plat.sys.model.SysUser;
 import com.critc.plat.sys.vo.SysUserSearchVO;
 import com.critc.plat.util.model.ComboboxVO;
@@ -14,7 +15,7 @@ import java.util.List;
  * @Date 11:16 2017/11/8
  */
 @Repository
-public class SysUserDao extends BaseDao<SysUser,SysUserSearchVO>{
+public class SysUserDao extends BaseDao<SysUser,SysUserSearchVO> {
 
     /**
      * 新增用户

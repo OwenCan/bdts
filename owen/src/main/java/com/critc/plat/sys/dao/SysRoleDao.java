@@ -1,5 +1,6 @@
 package com.critc.plat.sys.dao;
 
+import com.critc.plat.core.dao.BaseDao;
 import com.critc.plat.sys.model.SysRole;
 import com.critc.plat.util.model.ComboboxVO;
 import org.springframework.stereotype.Repository;
@@ -12,7 +13,7 @@ import java.util.List;
  * @Date 11:14 2017/11/9
  */
 @Repository
-public class SysRoleDao extends BaseDao<SysRole,SysRole>{
+public class SysRoleDao extends BaseDao<SysRole,SysRole> {
 
     /**
      * 新增

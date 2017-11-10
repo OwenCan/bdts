@@ -39,7 +39,7 @@
   </filter>
   <!--设置sitemesh映射-->
   <filter-mapping>
-    <filter-name>sitemesh3</filter-nam  e>
+    <filter-name>sitemesh3</filter-name>
     <url-pattern>/*</url-pattern>
     <dispatcher>FORWARD</dispatcher>
     <dispatcher>ERROR</dispatcher>

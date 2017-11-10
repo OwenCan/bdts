@@ -1,9 +1,11 @@
 package com.critc.plat.sys.dao;
 
+import com.critc.plat.core.dao.BaseDao;
 import com.critc.plat.sys.model.SysLog;
 import com.critc.plat.sys.vo.SysLogSearchVO;
 import com.critc.plat.util.page.PageUtil;
 import com.critc.plat.util.string.StringUtil;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -12,6 +14,7 @@ import java.util.List;
  * @Auther Owen Zhao
  * @Date 11:20 2017/11/9
  */
+@Repository
 public class SysLogDao  extends BaseDao<SysLog, SysLogSearchVO> {
 
     public int add(SysLog sysLog) {
@@ -26,7 +29,7 @@ public class SysLogDao  extends BaseDao<SysLog, SysLogSearchVO> {
      * @return
      */
     public List<SysLog> list(SysLogSearchVO sysLogSearchVO) {
-        String sql = "select l.*,u.realname realname  from t_sys_log l,t_sys_user u where l.user_id=u.id  ";
+        String sql = "select l.*,u.realname realname  from t_sys_log l,t_sys_user u where l.user_id=u.id";
         sql += createSearchSql(sysLogSearchVO);
         sql += " order by opera_date desc";
         sql = PageUtil.createMysqlPageSql(sql, sysLogSearchVO.getPageIndex());
