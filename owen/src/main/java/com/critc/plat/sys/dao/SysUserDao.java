@@ -10,13 +10,12 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-/**
- * @Auther Owen Zhao
- * @Date 11:16 2017/11/8
+/**系统用户Dao
+ * @author 孔垂云
+ * @date 2017-06-13
  */
 @Repository
-public class SysUserDao extends BaseDao<SysUser,SysUserSearchVO> {
-
+public class SysUserDao extends BaseDao<SysUser, SysUserSearchVO> {
     /**
      * 新增用户
      * @param sysUser

@@ -3,34 +3,30 @@ package com.critc.plat.sys.vo;
 import com.critc.plat.util.page.PageSearchVO;
 
 /**
+ * 用户查询VO
  *
+ * @author 孔垂云
+ * @date 2017-06-13
  */
-public class SysUserSearchVO extends PageSearchVO{
+public class SysUserSearchVO extends PageSearchVO {
+    private String username;//username
+    private Integer status;//状态
+    private Integer roleId;//角色
+    private String realname;//姓名
 
-    private String username;
-    private String status;
-    private Integer roleId;
-    private String realname;
-
-    /*模糊查询*/
-    public String getRealnameStr(){
-        return "%"+realname+"%";
+    //姓名模糊查询
+    public String getRealnameStr() {
+        return "%" + realname + "%";
     }
 
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status;
+    @Override
+    public String toString() {
+        return "SysUserSearchVO{" +
+                "username='" + username + '\'' +
+                ", status=" + status +
+                ", roleId=" + roleId +
+                ", realname='" + realname + '\'' +
+                '}';
     }
 
     public Integer getRoleId() {
@@ -41,6 +37,24 @@ public class SysUserSearchVO extends PageSearchVO{
         this.roleId = roleId;
     }
 
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
+    }
+
+
     public String getRealname() {
         return realname;
     }
@@ -49,13 +63,4 @@ public class SysUserSearchVO extends PageSearchVO{
         this.realname = realname;
     }
 
-    @Override
-    public String toString() {
-        return "SysUserSearchVO{" +
-                "username='" + username + '\'' +
-                ", status='" + status + '\'' +
-                ", roleId=" + roleId +
-                ", realname='" + realname + '\'' +
-                '}';
-    }
 }

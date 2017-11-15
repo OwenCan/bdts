@@ -1,11 +1,11 @@
 package com.critc.plat.util.model;
 
 /**
- * @Auther Owen Zhao
- * @Date 10:49 2017/11/8
+ * 下拉框的实体类
+ * Author  孔垂云
+ * Date  2017/6/11.
  */
 public class ComboboxVO {
-
     private String value;//字段值
     private String content;//字段内容
 

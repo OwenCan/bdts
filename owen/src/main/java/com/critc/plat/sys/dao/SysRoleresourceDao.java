@@ -8,8 +8,8 @@ import java.util.List;
 
 /**
  * 角色资源dao
- * @author Owen Zhao
- * @date 2017-11-09
+ * @author 孔垂云
+ * @date 2017-06-13
  */
 @Repository
 public class SysRoleresourceDao extends BaseDao<SysRoleResource, SysRoleResource> {

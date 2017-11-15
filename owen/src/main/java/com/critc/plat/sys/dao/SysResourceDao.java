@@ -7,9 +7,10 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 /**
- * @Description 系统资源管理dao
- * @Auther Owen Zhao
- * @Date 11:22 2017/11/9
+ * 系统资源管理Dao
+ *
+ * @author 孔垂云
+ * @date 2017-06-13
  */
 @Repository
 public class SysResourceDao extends BaseDao<SysResource, SysResource> {
@@ -138,7 +139,6 @@ public class SysResourceDao extends BaseDao<SysResource, SysResource> {
         String sql = "select t.id,t.name,t.code,t.parent_id,t.url,t.target,t.iconimg,t.display_order,t.type,t.description from t_sys_resource t where code=?";
         return get(sql, code);
     }
-
 
 
 }

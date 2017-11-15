@@ -25,5 +25,6 @@
     </div>
 </div>
 <%@include file="../common/scripts.jspf" %>
+<sitemesh:write property='critc-script'/>
 </body>
 </html>

@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * 系统日志service
  *
- * @author Owen Zhao
+ * @author 孔垂云
  * @date 2017-06-13
  */
 @Service
@@ -52,6 +52,5 @@ public class SysLogService {
     public int count(SysLogSearchVO sysLogSearchVO) {
         return sysLogDao.count(sysLogSearchVO);
     }
-
 
 }

@@ -10,12 +10,13 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 /**
- * @Description
- * @Auther Owen Zhao
- * @Date 11:20 2017/11/9
+ * 系统日志dao
+ *
+ * @author 孔垂云
+ * @date 2017-06-13
  */
 @Repository
-public class SysLogDao  extends BaseDao<SysLog, SysLogSearchVO> {
+public class SysLogDao extends BaseDao<SysLog, SysLogSearchVO> {
 
     public int add(SysLog sysLog) {
         String sql = "insert into t_sys_log(user_id,opera_date,opera_ip,module_name,opera_name,opera_url,opera_params)"
@@ -29,7 +30,7 @@ public class SysLogDao  extends BaseDao<SysLog, SysLogSearchVO> {
      * @return
      */
     public List<SysLog> list(SysLogSearchVO sysLogSearchVO) {
-        String sql = "select l.*,u.realname realname  from t_sys_log l,t_sys_user u where l.user_id=u.id";
+        String sql = "select l.*,u.realname realname  from t_sys_log l,t_sys_user u where l.user_id=u.id  ";
         sql += createSearchSql(sysLogSearchVO);
         sql += " order by opera_date desc";
         sql = PageUtil.createMysqlPageSql(sql, sysLogSearchVO.getPageIndex());
@@ -71,10 +72,10 @@ public class SysLogDao  extends BaseDao<SysLog, SysLogSearchVO> {
             sql += " and user_id=0";
         }
         if (StringUtil.isNotNullOrEmpty(sysLogSearchVO.getStartDate())) {
-            sql += " and to_char(opera_date,'yyyy-mm-dd')>=:startDate";
+            sql += " and date(opera_date)>=:startDate";
         }
         if (StringUtil.isNotNullOrEmpty(sysLogSearchVO.getEndDate())) {
-            sql += " and to_char(opera_date,'yyyy-mm-dd')<=:endDate";
+            sql += " and date(opera_date)<=:endDate";
         }
         return sql;
     }

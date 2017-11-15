@@ -8,12 +8,13 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 /**
- * @Description 系统角色管理Dao
- * @Auther Owen Zhao
- * @Date 11:14 2017/11/9
+ * 系统角色管理Dao
+ *
+ * @author 孔垂云
+ * @date 2017-06-13
  */
 @Repository
-public class SysRoleDao extends BaseDao<SysRole,SysRole> {
+public class SysRoleDao extends BaseDao<SysRole, SysRole> {
 
     /**
      * 新增
@@ -73,5 +74,6 @@ public class SysRoleDao extends BaseDao<SysRole,SysRole> {
         String sql = "select id value,name content from t_sys_role where 1=1 order by id ";
         return listCombobox(sql);
     }
+
 
 }

@@ -4,7 +4,7 @@ package com.critc.plat.sys.model;
 /**
  * 系统资源
  *
- * @author Owen Zhao
+ * @author 孔垂云
  * @date 2017-06-13
  */
 public class SysResource {
@@ -20,6 +20,7 @@ public class SysResource {
     private String description;//描述
     private int displayOrder;//排序
     private int cnt;//子节点数量
+
     @Override
     public String toString() {
         return "SysResource{" +

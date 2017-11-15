@@ -1,12 +1,27 @@
 package com.critc.plat.sys.vo;
 
+
 import com.critc.plat.util.page.PageSearchVO;
 
-public class SysLogSearchVO extends PageSearchVO{
+/**
+ * 日志管理查询条件
+ *
+ * @author 孔垂云
+ * @date 2017-06-13
+ */
+public class SysLogSearchVO extends PageSearchVO {
+    private Integer userId;//用户id
+    private String startDate;//起始日期
+    private String endDate;//终止日期
 
-    private Integer userId;
-    private String startDate;
-    private String endDate;
+    @Override
+    public String toString() {
+        return "SysLogSearchVO{" +
+                "userId=" + userId +
+                ", startDate='" + startDate + '\'' +
+                ", endDate='" + endDate + '\'' +
+                '}';
+    }
 
     public Integer getUserId() {
         return userId;
@@ -30,14 +45,5 @@ public class SysLogSearchVO extends PageSearchVO{
 
     public void setEndDate(String endDate) {
         this.endDate = endDate;
-    }
-
-    @Override
-    public String toString() {
-        return "SysLogSearchVO{" +
-                "userId=" + userId +
-                ", startDate='" + startDate + '\'' +
-                ", endDate='" + endDate + '\'' +
-                '}';
     }
 }

@@ -3,9 +3,10 @@ package com.critc.plat.util.page;
 import com.critc.plat.util.global.GlobalConst;
 
 /**
- * @Description 分页工具
- * @Auther Owen Zhao
- * @Date 16:10 2017/11/8
+ * 分页工具类，用于生成分页语句
+ *
+ * @author 孔垂云
+ * @date 2017-05-23
  */
 public class PageUtil {
 
@@ -31,4 +32,5 @@ public class PageUtil {
     public static String createMysqlPageSql(String sql, int pageIndex) {
         return sql += " limit " + (pageIndex - 1) * GlobalConst.PAGESIZE + "," + GlobalConst.PAGESIZE;
     }
+
 }
